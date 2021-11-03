@@ -1,0 +1,29 @@
+@keyframes around {
+    0% {
+        transform: rotateX(61deg) rotateY(-16deg) rotateZ(0deg);
+    }
+
+    100% {
+        transform: rotateX(61deg) rotateY(-16deg) rotateZ(360deg);
+    }
+}
+
+@keyframes around2 {
+    0% {
+        transform: rotateX(55deg) rotateY(-25deg) rotateZ(0deg) rotate(-90deg);
+    }
+
+    100% {
+        transform: rotateX(55deg) rotateY(-25deg) rotateZ(360deg) rotate(-90deg);
+    }
+}
+
+@keyframes innerRound {
+    0% {
+        transform: rotateX(0deg) rotateY(0deg);
+    }
+
+    100% {
+        transform: rotateX(360deg) rotateY(360deg);
+    }
+}

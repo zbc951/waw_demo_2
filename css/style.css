@@ -1,0 +1,224 @@
+@charset "UTF-8";
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+  font-family: "微軟正黑體";
+}
+
+ol, ul {
+  list-style: none;
+  box-sizing: border-box;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+button {
+  cursor: pointer;
+  outline: none;
+  border: none;
+  padding: 0px;
+  font-family: "微軟正黑體";
+}
+
+select, input {
+  outline: none;
+  box-sizing: border-box;
+  font-family: "微軟正黑體";
+}
+
+main {
+  display: block;
+}
+
+a {
+  outline: none;
+  text-decoration: none;
+}
+
+html {
+  width: 100%;
+  height: 100%;
+  background: #f5f5f5;
+}
+html body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+html body main {
+  width: 100%;
+  height: 100%;
+}
+html body main .container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+html body main .container div {
+  position: absolute;
+  border-radius: 50%;
+  transform-style: preserve-3d;
+}
+html body main .container div.box1 {
+  width: 900px;
+  height: 900px;
+  animation: around 10s linear 0s infinite;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+html body main .container div.box1 span {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  border-radius: 50%;
+  box-sizing: border-box;
+  border: solid 1px #1b1b1b;
+  box-shadow: 0px 0px 10px #1b1b1b80;
+}
+html body main .container div.box1 span:nth-of-type(2) {
+  transform: rotateX(40deg);
+}
+html body main .container div.box1 span:nth-of-type(3) {
+  transform: rotateX(80deg);
+}
+html body main .container div.box1 span:nth-of-type(4) {
+  transform: rotateX(120deg);
+}
+html body main .container div.box1 span:nth-of-type(5) {
+  transform: rotateX(160deg);
+}
+html body main .container div.box1 span:nth-of-type(6) {
+  transform: rotateX(200deg);
+}
+html body main .container div.box1 span:nth-of-type(7) {
+  transform: rotateX(240deg);
+}
+html body main .container div.box1 span:nth-of-type(8) {
+  transform: rotateX(280deg);
+}
+html body main .container div.box1 span:nth-of-type(9) {
+  transform: rotateX(320deg);
+}
+html body main .container div.box1 span:nth-of-type(10) {
+  transform: rotateY(40deg);
+}
+html body main .container div.box1 span:nth-of-type(11) {
+  transform: rotateY(80deg);
+}
+html body main .container div.box1 span:nth-of-type(12) {
+  transform: rotateY(120deg);
+}
+html body main .container div.box1 span:nth-of-type(13) {
+  transform: rotateY(160deg);
+}
+html body main .container div.box1 span:nth-of-type(14) {
+  transform: rotateY(200deg);
+}
+html body main .container div.box1 span:nth-of-type(15) {
+  transform: rotateY(240deg);
+}
+html body main .container div.box1 span:nth-of-type(16) {
+  transform: rotateY(280deg);
+}
+html body main .container div.box1 span:nth-of-type(17) {
+  transform: rotateY(320deg);
+}
+html body main .container div.box2 {
+  width: 2000px;
+  height: 2000px;
+  animation: around2 4s ease-in 0s infinite;
+  transform: rotateX(55deg) rotateY(-25deg) rotate(-90deg);
+}
+html body main .container div.box2 .innerBox {
+  transform: rotate(45deg);
+}
+html body main .container div.box2 .innerBox span {
+  position: absolute;
+  background: #1b1b1b;
+  box-shadow: 0px 0px 10px #1b1b1b80;
+  animation: innerRound 0s linear 0s infinite;
+  animation-duration: 10s;
+  -webkit-clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+          clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+}
+html body main .container figure {
+  width: 80%;
+  height: 25%;
+}
+html body main .container figure svg > * {
+  fill: #1b1b1b;
+  stroke: #1b1b1b;
+}
+
+@keyframes around {
+  0% {
+    transform: rotateX(61deg) rotateY(-16deg) rotateZ(0deg);
+  }
+  100% {
+    transform: rotateX(61deg) rotateY(-16deg) rotateZ(360deg);
+  }
+}
+@keyframes around2 {
+  0% {
+    transform: rotateX(55deg) rotateY(-25deg) rotateZ(0deg) rotate(-90deg);
+  }
+  100% {
+    transform: rotateX(55deg) rotateY(-25deg) rotateZ(360deg) rotate(-90deg);
+  }
+}
+@keyframes innerRound {
+  0% {
+    transform: rotateX(0deg) rotateY(0deg);
+  }
+  100% {
+    transform: rotateX(360deg) rotateY(360deg);
+  }
+}

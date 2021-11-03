@@ -1,0 +1,132 @@
+html {
+    width: 100%;
+    height: 100%;
+    background: #f5f5f5;
+
+    body {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+
+        main {
+            width: 100%;
+            height: 100%;
+
+            .container {
+                width: 100%;
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                
+                div {
+                    position: absolute;
+                    border-radius: 50%;
+                    transform-style: preserve-3d;
+
+                    &.box1 {
+                        width: 900px;
+                        height: 900px;
+                        animation: around 10s linear 0s infinite;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+
+                        span {
+                            width: 100%;
+                            height: 100%;
+                            position: absolute;
+                            top: 0px;
+                            left: 0px;
+                            border-radius: 50%;
+                            box-sizing: border-box;
+                            border: solid 1px #1b1b1b;
+                            box-shadow: 0px 0px 10px #1b1b1b80;
+
+                            &:nth-of-type(2) {
+                                transform: rotateX(40deg);
+                            }
+                            &:nth-of-type(3) {
+                                transform: rotateX(80deg);
+                            }
+                            &:nth-of-type(4) {
+                                transform: rotateX(120deg);
+                            }
+                            &:nth-of-type(5) {
+                                transform: rotateX(160deg);
+                            }
+                            &:nth-of-type(6) {
+                                transform: rotateX(200deg);
+                            }
+                            &:nth-of-type(7) {
+                                transform: rotateX(240deg);
+                            }
+                            &:nth-of-type(8) {
+                                transform: rotateX(280deg);
+                            }
+                            &:nth-of-type(9) {
+                                transform: rotateX(320deg);
+                            }
+                            &:nth-of-type(10) {
+                                transform: rotateY(40deg);
+                            }
+                            &:nth-of-type(11) {
+                                transform: rotateY(80deg);
+                            }
+                            &:nth-of-type(12) {
+                                transform: rotateY(120deg);
+                            }
+                            &:nth-of-type(13) {
+                                transform: rotateY(160deg);
+                            }
+                            &:nth-of-type(14) {
+                                transform: rotateY(200deg);
+                            }
+                            &:nth-of-type(15) {
+                                transform: rotateY(240deg);
+                            }
+                            &:nth-of-type(16) {
+                                transform: rotateY(280deg);
+                            }
+                            &:nth-of-type(17) {
+                                transform: rotateY(320deg);
+                            }
+                        }
+                    }
+
+                    &.box2 {
+                        width: 2000px;
+                        height: 2000px;
+                        // border: solid 5px #ffffff;
+                        // box-shadow: 3px 3px 50px 0px #ffffff;
+                        animation: around2 4s ease-in 0s infinite;
+                        transform: rotateX(55deg) rotateY(-25deg) rotate(-90deg);
+
+                        .innerBox {
+                            transform: rotate(45deg);
+
+                            span {
+                                position: absolute;
+                                background: #1b1b1b;
+                                box-shadow: 0px 0px 10px #1b1b1b80;
+                                animation: innerRound 0s linear 0s infinite;
+                                animation-duration: 10s;
+                                clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+                            }
+                        }
+                    }
+                }
+
+                figure {
+                    width: 80%;
+                    height: 25%;
+
+                    svg > * {
+                        fill: #1b1b1b;
+                        stroke: #1b1b1b;
+                    }
+                }
+            }
+        }
+    }
+}
